@@ -1,14 +1,12 @@
-@keyframes shimmy {
-  0% {
-    transform: rotate(5deg); }
-  25% {
-    transform: rotate(-5deg); }
-  50% {
-    transform: rotate(5deg); }
-  75% {
-    transform: rotate(-5deg); }
-  100% {
-    transform: rotate(5deg); } }
+hr {
+  height: 0;
+  margin: 0;
+  border-top: 0;
+  border-bottom: 0; }
+
+.slider-section {
+  clear: both; }
+
 .home ul, .home li {
   margin: 0;
   padding: 0;
@@ -20,6 +18,23 @@
 .home a {
   text-decoration: none;
   cursor: pointer; }
+.home .line-through {
+  background: white;
+  padding: 0px 15px 0px 15px; }
+  .home .line-through hr {
+    height: 0px;
+    border-top: 1px solid #000;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    top: 50%;
+    z-index: 1; }
+    .home .line-through hr + span {
+      z-index: 10;
+      position: relative;
+      padding: 0 10px;
+      background: #fff; }
 .home .cta-button {
   color: #fff;
   background: #ff6342;
@@ -65,7 +80,11 @@
   font-family: "avanti", sans-serif;
   text-transform: uppercase; }
   .home .main-header .main-nav .left-menu li {
-    margin-top: -10px; }
+    margin-top: -10px;
+    float: left; }
+    .home .main-header .main-nav .left-menu li.company-name {
+      padding-top: 45px;
+      padding-left: 10px; }
     .home .main-header .main-nav .left-menu li a.logo img {
       position: Relative;
       z-index: 10; }
@@ -109,17 +128,17 @@
   .home .products .products-title {
     font-size: 30px;
     text-transform: uppercase;
-    display: inline;
-    z-index: 20;
+    display: block;
     position: relative;
-    background: white; }
-    .home .products .products-title:after {
-      position: relative;
-      z-index: 1;
-      border-bottom: 1px solid #333;
-      content: "";
-      display: block;
-      top: -5px; }
+    /*
+    &:after {
+    	  position: relative;
+    	  z-index: 1;
+    	  border-bottom: 1px solid #333;
+    	  content: "";
+    	  display: block;
+    	  top: -5px;
+    }*/ }
   .home .products .products-sub-title {
     font-size: 16px;
     text-transform: uppercase; }
@@ -206,20 +225,21 @@
     font-family: "Avanti", sans-serif;
     text-align: center;
     text-transform: uppercase;
-    display: inline;
+    display: block;
     z-index: 20;
     position: relative;
-    background: white;
     margin-top: 30px;
     padding-left: 5px;
-    padding-right: 5px; }
-    .home .about-company .company-stats-title:after {
-      position: relative;
-      z-index: 1;
-      border-bottom: 1px solid #333;
-      content: "";
-      display: block;
-      top: -5px; }
+    padding-right: 5px;
+  /*
+  &:after {
+	  position: relative;
+	  z-index: 1;
+	  border-bottom: 1px solid #333;
+	  content: "";
+	  display: block;
+	  top: -5px;
+} */ }
   .home .about-company .stats-wrapper {
     margin-left: 25px;
     margin-top: 30px; }
