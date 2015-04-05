@@ -544,7 +544,9 @@ hr {
 			margin-left:10px;
 		}
 		.icons {
-			
+			+ ul {
+				font-family:"PT_Sans", sans-serif;
+			}
 
 			a.blue {
 				color:#337ab7;

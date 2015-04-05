@@ -408,6 +408,8 @@ hr {
     margin-left: 10px; }
   .home .footer-links .icons {
     font-size: 20px; }
+    .home .footer-links .icons + ul {
+      font-family: "PT_Sans", sans-serif; }
     .home .footer-links .icons a.blue {
       color: #337ab7; }
       .home .footer-links .icons a.blue:hover {
