@@ -48,7 +48,9 @@
 						
 					</ul>
 					<ul class="nav-bar col-xs-9">
-						<li class="search"><a href="#">Търсене...<i class="fa fa-search"></i></a> </li>
+						<li class="search">
+							<input type="text" placeholder="Търсене...">
+							<input type="submit" value="&#xf002;">
 						<li><a href="#">Контакти</a> </li>
 						<li><a href="#">Полезно за вас</a> </li>
 						<li><a href="#">Новини</a></li>
@@ -370,7 +372,7 @@
 
 		</script>
 		<script>
-TweenMax.staggerFrom(".main-nav-links li", 2, {y:"+=200"}, 0.2)
+TweenMax.staggerFrom(".main-nav-links li", 2, {y:"+=200", opacity:0}, 0.2)
 		</script>
 </body>
 
